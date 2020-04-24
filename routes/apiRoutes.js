@@ -17,6 +17,8 @@ module.exports = function(app) {
         text: req.body.text,
 
       }
+      
+
       fs.readFile("./db.json", "utf8", (err,data)=>{
         if (err) throw err;
         const allNotes = JSON.parse(data)
